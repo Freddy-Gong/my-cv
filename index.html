@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <script src="//at.alicdn.com/t/font_2174268_g4ewnlspqbq.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        span {
+            color: chocolate;
+            font-weight: bolder;
+        }
+
+        body {
+            font: 14px/1.5 Arial;
+            color: #666;
+        }
+
+        .layout {
+            max-width: 21cm;
+            margin: 0 auto;
+        }
+
+        #page {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            width: 100%;
+            background: rgb(60, 60, 60);
+            color: #ffffff;
+            padding: 40px 0 10px 240px;
+
+        }
+
+        header>h1 {
+            font-size: 30px;
+        }
+
+        header>p {
+            font-size: 18px;
+            color: #aaa;
+        }
+
+        aside {
+            width: 240px;
+            min-height: 29.7cm;
+            border-right: 2px solid #ccc;
+        }
+
+        aside .avatar {
+            text-align: center;
+            margin-top: -100px;
+        }
+
+        aside .avatar>span {
+            display: inline-block;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        aside .avatar img {
+            width: 200px;
+        }
+
+        section {
+            padding: 16px 0;
+            margin: 10px 20px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        section h2 {
+            color: #5c99ca;
+            font-size: 16px;
+            padding: 10px 0;
+        }
+
+        section img {
+            width: 100%;
+        }
+
+        .skill .item {
+            display: flex;
+            align-items: center;
+        }
+
+        .skill .keyword {
+            width: 40%;
+        }
+
+        .skill .rule {
+            flex: 1;
+            background: blueviolet;
+            height: 4px;
+            background: #ccc;
+        }
+
+        .skill .rule i {
+            display: block;
+            width: 10%;
+            height: 4px;
+            background: black;
+        }
+
+        .personal .item span:first-child {
+            display: inline-block;
+            width: 40%;
+        }
+
+        .personal .item span:last-child::before {
+            content: ':';
+            margin-right: 8%;
+        }
+
+        .contact .item {
+            display: flex;
+            align-items: center;
+            margin: 4px 0;
+        }
+
+        .contact svg {
+            width: 1.5em;
+            height: 1.5em;
+            margin-right: 8px;
+        }
+
+        .QRcode {
+            display: flex;
+            align-items: center;
+        }
+
+        main {
+            flex: 1;
+            min-height: calc(100vh - 100px);
+        }
+
+
+
+        /* @media (max-width: 768px) {
+            aside {
+                width: 100%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="layout" id="page">
+        <header>
+            <h1>巩龙达</h1>
+            <p>应聘前端工程师</p>
+        </header>
+        <aside>
+            <div class="avatar">
+                <span><img src="./photo.jpg" alt=""></span>
+            </div>
+            <section>
+                <h2>个人信息</h2>
+                <div class="detial contact">
+
+
+                    <div class="item">
+                        <svg>
+                            <use xlink:href="#icon-education" />
+                        </svg>
+                        <span style="color: #666;">浙江大学研究生三年级</span>
+                    </div>
+                    <div class="item">
+                        <svg>
+                            <use xlink:href="#icon-zhuanye" />
+                        </svg>
+                        <span style="color: #666;">土壤学</span>
+
+                    </div>
+                    <div class="item">
+
+                        <svg>
+                            <use xlink:href="#icon-yingyu" />
+                        </svg>
+                        <span style="color: #666;">CET-6</span>
+
+                    </div>
+                    <div class="item">
+
+                        <svg>
+                            <use xlink:href="#icon-boke" />
+                        </svg>
+                        <a href="https://www.yuque.com/freddygong" target="_blank">个人博客</a>
+                    </div>
+                    <div class="item">
+                        <svg>
+                            <use xlink:href="#icon-github" />
+                        </svg>
+                        <a href="https://github.com/Freddy-Gong" target="_blank">github主页</a>
+                    </div>
+                </div>
+                <div class="detial contact">
+                    <div class="item">
+                        <svg>
+                            <use xlink:href="#icon-weixin" />
+                        </svg>
+                        <a href="wechat:gld189461810122">gld18946180122</a>
+                    </div>
+                    <div class="item">
+                        <svg>
+                            <use xlink:href="#icon-phone" />
+                        </svg>
+                        <a href="tel:189461810122" target="_blank">18946180122</a>
+                    </div>
+
+                    <div class="item">
+                        <svg>
+                            <use xlink:href="#icon-email" />
+                        </svg>
+                        <a href="mailto:21914103@zju.edu.cn" target="_blank">21914103@zju.edu.cn</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>专业技能</h2>
+                <ul>
+                    <li>熟练<span>HTML</span>语义化，<span>CSS</span>的各种布局，<span>动画过渡效果，Canvas动画制作。</span></li>
+                    <li>
+                        熟悉原生<span>JavaScript，ES6+，</span>熟悉各种新的API如<span>扩展运算符，可选链，Promise，析构赋值等。</span>
+                    </li>
+                    <li>
+                        熟悉<span>Vue 3, Vue全家桶, React, React全家桶</span>，理解其核心概念，并且可使用它们进行项目的开发。
+                    </li>
+                    <li>
+                        熟悉<span>TypeScript</span>，并且可以直接将其结合Vue和React进行开发。
+                    </li>
+                    <li>
+                        熟练使用<span>git来管理代码</span>，了解<span>Webpack 等构建工具</span>；
+                    </li>
+                    <li>
+                        熟练使用<span>R语言</span>来进行<span>数据分析</span>以及<span>数据可视化。</span>
+                    </li>
+                </ul>
+            </section>
+
+        </aside>
+        <main>
+            <section>
+                <h1 style="color: #5c99ca;">实习经历</h1>
+            </section>
+            <section>
+                <h1 style="color: #5c99ca;">项目经历</h1>
+                <h2>1.Fusion(融合) UI(个人开源项目)</h2>
+                <img src="./fusion.png" alt="">
+                <p>
+                    项目介绍：该项目是参照Framework7、Ant Design、Element UI等UI库思路，做的一套基于<span>Vue
+                        3</span>的简易UI组件库，并且源码都是使用<span>TypeScript</span>进行编写，并且使用<span>Vite</span>作为创建项目模板。目前已支持Switch、Button、Tabs和Dialog组件。其他组件正在开发中。
+                    每个组件均经历从需求分析到<span>Mocha单元测试</span>，最终制作官方文档，发布在npm上。完成该项目使我了解了Vue
+                    3的许多新的属性，同时提升了的TypeScript能力，并且对前端工程化流程以及单元测试的重要性有了深刻的理解，进一步了解了开源文化。
+
+                </p>
+                <p>
+                    <span>技术：Vue 3/Vite/TypeScript/SCSS/Mocha/Chia</span>
+
+                </p>
+                <a href="https://github.com/Freddy-Gong/Vue3-wheel" target="_blank">项目源码</a>
+                <a href="http://freddy-gong.gitee.io/vue-wheel-websit" target="_blank">在线预览</a>
+            </section>
+            <section>
+                <h2>2.靓仔记账(React版)</h2>
+                <img src="./react1.png" alt="" style="width: 30%;">
+                <img src="./react2.png" alt="" style="width: 30%;">
+                <img src="./react3.png" alt="" style="width: 30%;">
+
+                <p>
+                    项目介绍：靓仔记账是一款功能丰富的记账产品，也是一款基于<span>React、TypeScript、Redux、react-router、Echarts实现的单页面应用</span>。由本人独立设计以及实现，期间遇到很多<span>Webpack、TypeScript</span>方面的问题，并将整个实现过程记
+                <div style="height: 20px;"></div>
+                录在个人博客。
+                </p>
+
+                <p>实现功能：包含记账、图表、统计等页面，实现了记账、标签管理、数据统计等功能。项目使用create-react-app创建模板，通过Redux实现数据管理，通过React-router实现路由跳转，使用Echarts实现数据的统计和可视化。
+                </p>
+                <p>
+                    <span>技术栈：TypeScript/React/create-react-app/Redux/react-router</span>
+
+                </p>
+                <div class="QRcode">
+                    <a href="https://github.com/Freddy-Gong/charge-account-2" style="margin-right: 16px;"
+                        target="_blank">项目源码</a>
+
+                    扫码预览
+                    <img src="./Reactjizhang.png" alt="" style="width: 6em;">
+                </div>
+
+            </section>
+            <section>
+                <h2>3.靓仔记账(Vue版)</h2>
+                <img src="./vue2.png" alt="" style="width: 30%;">
+                <img src="./vue1.png" alt="" style="width: 30%;">
+                <img src="./vue3.png" alt="" style="width: 30%;">
+                <p>
+                    项目介绍：靓仔记账是一款功能丰富的记账产品，也是一款基于<span>Vue、TypeScript、Vuex、vue-router、Echarts实现的单页面应用。</span>由本人独立设计以及实现，期间遇到很多Webpack、TypeScript方面的问题，并将整个实现过程记录在个人博客。
+                </p>
+                <p>实现功能：包含记账、图表、统计等页面，实现了记账、标签管理、数据统计等功能。项目使用vue
+                    CLI创建模板，通过Vuex实现数据管理，通过Vue-router实现路由跳转，使用Echarts实现数据的统计和可视化。
+                </p>
+                <p>
+                    <span>技术栈：TypeScript/Vue/vue CLI/Vuex/vue-router</span>
+
+                </p>
+                <div class="QRcode">
+                    <a href="https://github.com/Freddy-Gong/charge-account-2" style="margin-right: 16px;"
+                        target="_blank">项目源码</a>
+
+                    扫码预览
+                    <img src="./VueJIZHANG.png" alt="" style="width: 6em;">
+                </div>
+            </section>
+            <section>
+                <h2>4.猫科导航</h2>
+                <img src="./nav.png" alt="">
+                <p>
+                    项目介绍：使用原生JavaScript，监听键盘事件，实现了一个可自定义的导航网站，同时加入了百度的收索功能，加深了对浏览器Storage的理解
+                </p>
+                <p>
+                    <span>技术栈：JavaScript/HTML/CSS/LocalStorage</span>
+
+                </p>
+                <a href="https://gitee.com/Freddy-Gong/nav" target="_blank">项目源码</a>
+                <a href="http://freddy-gong.gitee.io/nav/src/index.html" target="_blank">在线预览</a>
+            </section>
+            <section>
+                <h2>5.自制画板</h2>
+                <img src="./hua.png" alt="">
+                <p>
+                    项目介绍：使用原生JavaScript的canvas API，监听鼠标事件，实现了一个可以流畅作画的画板。
+                </p>
+                <p>技术栈：JavaScript/Canvas/HTML/CSS/</p>
+                <a href="https://gitee.com/Freddy-Gong/canvans" target="_blank">项目源码</a>
+                <a href="http://freddy-gong.gitee.io/canvans/" target="_blank">在线预览</a>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
